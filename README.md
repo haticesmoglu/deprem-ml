@@ -64,6 +64,10 @@ Sonuçları yorumladım ve hangi modelin daha iyi performans verdiğini grafikle
 
 Tüm teknik açıklamaları notebook içinde markdown hücrelerinde yazdım. Kodların ne işe yaradığını ve neden yaptığımı elimden geldiğince anlatmaya çalıştım.
 
+## Bu Projeyi Neden Yaptım?
+
+Bu projeyle hem Python becerilerimi hem de makine öğrenmesi konusundaki bilgimi uygulamalı olarak geliştirmiş oldum. Depremlerin Türkiye için ne kadar önemli olduğunu düşündüğümüzde, bu verilerle çalışmak hem teknik hem de duygusal olarak motive ediciydi.
+
 
 ## Projenin Geleceği
 
@@ -73,10 +77,6 @@ Bu projeyi daha da geliştirmek isterim. Aklımda şu fikirler var:
 - Streamlit ile basit bir kullanıcı arayüzü yaparak modeli web'e taşımak
 - Gerçek zamanlı veri çekerek dinamik tahmin yapmak
 - Unsupervised algoritmalarla farklı analizler denemek olabilir
-
-## Bu Projeyi Neden Yaptım?
-
-Bu projeyle hem Python becerilerimi hem de makine öğrenmesi konusundaki bilgimi uygulamalı olarak geliştirmiş oldum. Depremlerin Türkiye için ne kadar önemli olduğunu düşündüğümüzde, bu verilerle çalışmak hem teknik hem de duygusal olarak motive ediciydi.
 
 
 ## Yardım Aldığım Diğer Çalışmalar
