@@ -1,7 +1,7 @@
 # deprem-ml
  Türkiye Deprem Verileri ile Makine Öğrenmesi Projesi
 
-Merhaba! Ben bu projede, Türkiye'de 1999 yılından bu yana meydana gelen depremleri inceleyerek, büyüklüğü 5.5 ve üzeri olan, yani yıkıcı sayılabilecek depremleri tahmin edebilecek bir makine öğrenmesi modeli geliştirmeyi hedefledim. Amacım, geçmiş verilere dayanarak olası yıkıcı depremleri önceden tahmin edebilmek ve böylece afet yönetimi ve hazırlık süreçlerine katkı sağlayabilecek bir sistemin temelini atmaktı.
+Merhaba. Ben bu projede, Türkiye'de 1999 yılından bu yana meydana gelen depremleri inceleyerek büyüklüğü 5.5 ve üzeri olan yani yıkıcı sayılabilecek depremleri tahmin edebilecek bir makine öğrenmesi modeli geliştirmeyi hedefledim. Amacım, geçmiş verilere dayanarak olası yıkıcı depremleri önceden tahmin edebilmek ve böylece afet yönetimi ve hazırlık süreçlerine katkı sağlayabilecek bir sistemin temelini atmaktı.
 
 Proje kapsamında ilk olarak veriyi detaylıca analiz ettim (EDA). Aykırı değerleri inceledim, eksik verileri temizledim ve veriyi modellemeye uygun hale getirdim. Ardından çeşitli sınıflandırma algoritmalarını (Logistic Regression, KNN, SVC, Decision Tree, Random Forest) uygulayarak karşılaştırmalı analizler yaptım. Modelleri eğitmeden önce veri dengesizliği gibi sorunları SMOTE ile çözmeye çalıştım. Performans değerlendirmesinde çapraz doğrulama (cross validation) ve metrikler (accuracy, precision, recall, f1-score) kullandım.
 
@@ -21,17 +21,13 @@ Veri setini Kaggle üzerinden aldım. İçinde 490.000'den fazla satır vardı. 
 Ben bu veriler üzerinde ön işleme yaptıktan sonra, “Yıkıcı mı?” şeklinde 0 ve 1’lerden oluşan yeni bir hedef değişken oluşturdum.
 
 # Uyguladığım Adımlar
-Keşifsel Veri Analizi (EDA)
 
-Veri Ön İşleme
-
-Veri Dengeleme
-
-Gözetimli Öğrenme(Random Forest)
-
-Model Değerlendirme
-
-Sonuç
+- Keşifsel Veri Analizi (EDA)
+- Veri Ön İşleme (eksik değer temizleme, aykırı değer analizi)
+- Veri Dengeleme (SMOTE ile)
+- Gözetimli Öğrenme (çeşitli sınıflandırma algoritmaları)
+- Model Değerlendirme (cross-validation ve metrikler ile)
+- En iyi modeli seçip hiperparametre optimizasyonu uyguladım
 
 # Uyguladığım Makine Öğrenmesi Modelleri
 
@@ -41,11 +37,11 @@ Bu projede farklı gözetimli öğrenme algoritmalarını denedim:
 - KNN
 - SVC
 - Decision Tree
-- Random Forest
-- *Random Forest (En iyi sonuçları verdi)*
+- Random Forest 
 
-### En başarılı model: Random Forest Classifier
-
+# En başarılı model: Random Forest Classifier
+Random Forest modeli en iyi sonuçları verdiği için bu modeli tercih ettim. Hem doğruluğu yüksekti hem de dengesiz veri setinde yıkıcı depremleri daha iyi yakaladı. Logistic Regression da iyi sonuç verdi ama daha basit bir model olduğu için sınırlı kaldı.Final model olarak Random Forest'ı seçtim.
+Ayrıca bu proje boyunca sadece kod yazmakla kalmadım, aynı zamanda yaptığım her adımı anlamaya ve yorumlamaya çalıştım. Metrikleri ve modelleri karşılaştırarak en uygun yöntemi seçmeye dikkat ettim.
 ## Değerlendirme Metrikleri
 
 Modeli değerlendirirken şunlara baktım:
@@ -57,17 +53,12 @@ Modeli değerlendirirken şunlara baktım:
 - Confusion Matrix (karışıklık matrisi)
 
 Sonuçları yorumladım ve hangi modelin daha iyi performans verdiğini grafiklerle karşılaştırdım.
-
----
-
-## Teknik Açıklamalar
-
-Tüm teknik açıklamaları notebook içinde markdown hücrelerinde yazdım. Kodların ne işe yaradığını ve neden yaptığımı elimden geldiğince anlatmaya çalıştım.
+# Metrik Yorumlarım
+Kodları yazmakla kalmadım, sonuçları anlamaya ve yorumlamaya da çalıştım. Hangi modelin ne kadar başarılı olduğunu sadece sayılarla değil, mantıklı şekilde analiz ettim. Örneğin, yüksek accuracy’ye rağmen düşük recall gibi durumların neden önemli olduğunu değerlendirdim. Bu da benim için çok öğretici oldu.
 
 ## Bu Projeyi Neden Yaptım?
 
 Bu projeyle hem Python becerilerimi hem de makine öğrenmesi konusundaki bilgimi uygulamalı olarak geliştirmiş oldum. Depremlerin Türkiye için ne kadar önemli olduğunu düşündüğümüzde, bu verilerle çalışmak hem teknik hem de duygusal olarak motive ediciydi.
-
 
 ## Projenin Geleceği
 
@@ -78,6 +69,9 @@ Bu projeyi daha da geliştirmek isterim. Aklımda şu fikirler var:
 - Gerçek zamanlı veri çekerek dinamik tahmin yapmak
 - Unsupervised algoritmalarla farklı analizler denemek olabilir
 
+## Teknik Açıklamalar
+
+Tüm teknik açıklamaları notebook içinde markdown hücrelerinde yazdım. Kodların ne işe yaradığını ve neden yaptığımı elimden geldiğince anlatmaya çalıştım.
 
 ## Yardım Aldığım Diğer Çalışmalar
 
