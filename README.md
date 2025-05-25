@@ -86,4 +86,4 @@ Bu projeyle hem Python becerilerimi hem de makine öğrenmesi konusundaki bilgim
 
 # Kaggle Notebook
 Projeye ait tüm kodlar ve açıklamalar için Kaggle notebook dosyasına buradan ulaşabilirsiniz:  
-👉 [Kaggle Notebook Linki](https://www.kaggle.com/code/haticesarmustafaolu/t-rk-ye-deprem-ver-ler-le-mak-ne-renmes)
+[Kaggle Notebook Linki](https://www.kaggle.com/code/haticesarmustafaolu/t-rk-ye-deprem-ver-ler-le-mak-ne-renmes)
